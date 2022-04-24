@@ -855,24 +855,24 @@ lilconfig@^2.0.5:
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.5.tgz#19e57fd06ccc3848fd1891655b5a447092225b25"
   integrity sha512-xaYmXZtTHPAw5m+xLN8ab9C+3a8YmV3asNSPOATITbtwrfbwaLJj8h66H1WMIpALCkqsIzK3h7oQ+PdX+LQ9Eg==
 
-lingo3d-vue@^1.0.0:
-  version "1.0.24"
-  resolved "https://registry.yarnpkg.com/lingo3d-vue/-/lingo3d-vue-1.0.24.tgz#48a2b3d790363685bb4884183ea584f425cb2788"
-  integrity sha512-n+ZxQCQOOF1dbr5yvCb5zjwD0wGTSYWe7V7akjBL3l8Sl8M/LJRd686wTkS5kmXo02GtNSUhJy2lKrgCPKQG7Q==
+lingo3d-vue@^1.0.25:
+  version "1.0.29"
+  resolved "https://registry.yarnpkg.com/lingo3d-vue/-/lingo3d-vue-1.0.29.tgz#a0cfe224811b90314780f7e81187cf47d93c7fe2"
+  integrity sha512-IyZvkDwOGSmNomnP8jV1j+9jSv7JnNynGZHm635bCdzReR04D9Ppv1FEJgIrUcwsFvCUTPT3ODSzL9Tr/lHLTQ==
   dependencies:
     "@lincode/promiselikes" "*"
     "@lincode/reactivity" "*"
     "@lincode/utils" "*"
     "@tweakpane/core" "1"
-    lingo3d "1.10.105"
+    lingo3d "1.10.110"
     nanoid "3"
     popmotion "11"
     tweakpane "3"
 
-lingo3d@1.10.105:
-  version "1.10.105"
-  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.105.tgz#b0638915d5808654ed08fb3a1fe627ff5a6f4be8"
-  integrity sha512-ZP/TpGtCCW/nyJs0tejddNHwDny8B5k/TApTXiitKgT0qsfQIug+vQi6Pw5i2XQ79iG2leSrLveswjGXXNv4Gg==
+lingo3d@1.10.110:
+  version "1.10.110"
+  resolved "https://registry.yarnpkg.com/lingo3d/-/lingo3d-1.10.110.tgz#1f7c4bdaf0838d384171a33ca7689a5a08df69f3"
+  integrity sha512-B+C59OHIoElpGUirlNxlHrP7sEXQNPTFQhz1vq6i/7lJsgFydlGgmSTzivttYtqXdhBNmuX4b5lqS9KRL85/pA==
   dependencies:
     "@lincode/events" "*"
     "@lincode/filetypes" "*"
