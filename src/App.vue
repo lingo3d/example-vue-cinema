@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { World, Model, ThirdPersonCamera, Keyboard, types, Find, useSpring, usePreload } from "lingo3d-vue"
+import { World, Model, ThirdPersonCamera, Keyboard, types, Find, useSpring, usePreload, HTML } from "lingo3d-vue"
 import { computed, ref } from "vue"
 
 const pose = ref("idle")
@@ -31,7 +31,7 @@ const handleKeyUp = (key: string) => {
 </script>
 
 <template>
-  <World default-light="studio" :default-light-scale="3">
+  <World default-light="studio">
     <Model src="cinema.glb" :scale="10" physics="map" :roughness-factor="0.98">
       <Find
        name="screen0"
