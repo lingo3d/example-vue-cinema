@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { World, Model, ThirdPersonCamera, Keyboard, types, Find, useSpring, usePreload, HTML } from "lingo3d-vue"
+import { World, Model, ThirdPersonCamera, Keyboard, types, Find, useSpring, HTML } from "lingo3d-vue"
 import { computed, ref } from "vue"
 
 const pose = ref("idle")
@@ -32,13 +32,20 @@ const handleKeyUp = (key: string) => {
 
 <template>
   <World default-light="studio">
-    <Model src="cinema.glb" :scale="10" physics="map" :roughness-factor="0.98">
+    <Model src="cinema.glb" :scale="10" physics="map" :roughness-factor="0.3" :metalness-factor="0.5">
       <Find
        name="screen0"
-       texture="movie.mp4"
        @mouse-over="looking = true"
        @mouse-out="looking = false"
        :outline="looking"
+      >
+        <HTML v-if="looking">
+          <div style="color: white">now playing: Doctor Strange</div>
+        </HTML>
+      </Find>
+      <Find
+       name="Couch"
+       clone-material
       >
         <HTML v-if="looking">
           <div style="color: white">now playing: Doctor Strange</div>
@@ -52,7 +59,7 @@ const handleKeyUp = (key: string) => {
        physics="character"
        :animations="{ idle: 'Idle.fbx', walking: 'Walking.fbx' }"
        :animation="pose"
-       pbr
+       :metalness-factor="-1"
       />
     </ThirdPersonCamera>
     <Keyboard @key-press="handleKeyPress" @key-up="handleKeyUp" />
